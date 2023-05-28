@@ -25,7 +25,10 @@ public class AddingAndRemovalTest {
 			System.out.println("Sepete ürün ekledi mi ?: Hayır ");
 		}
 		WebElement sepetiBosalt = surucu.findElement(By.xpath("//*[@id=\"pb-container\"]/div/div[2]/div[2]/div/div[4]/button/i"));
+		Thread.sleep(2000);
 		sepetiBosalt.click();
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	public void sepetCikarmaTest() throws InterruptedException {
 		WebDriver surucu = featureTest.login();
@@ -44,6 +47,8 @@ public class AddingAndRemovalTest {
 		}else {
 			System.out.println("Sepete ürün ekledi mi ?: Hayır ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void favoriEklemeCikarmaTest() throws InterruptedException {
@@ -71,7 +76,8 @@ public class AddingAndRemovalTest {
 		}else {
 			System.out.println("Ürün favorilerden çıkarıldı mı?  : Hayır. Test Başarısız.");
 		}
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void koleksiyonaUrunEkleveSil() throws InterruptedException {
@@ -113,6 +119,7 @@ public class AddingAndRemovalTest {
 			System.out.println("Ürün koleksiyondan silindi mi?: Hayır. Test başarısız.");
 		}
 
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 }

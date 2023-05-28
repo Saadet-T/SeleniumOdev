@@ -24,6 +24,8 @@ public class ImageTest {
 		}else {
 			System.out.println("Toka resmi gösteriliyor mu?: Hayır . Test başarısız. ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void kadınLinkResimTest() throws InterruptedException {
@@ -43,5 +45,7 @@ public class ImageTest {
 		}else {
 			System.out.println("Toka resmi gösteriliyor mu?: Hayır. Test başarısız ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 }

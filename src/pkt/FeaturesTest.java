@@ -40,6 +40,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Checkbox seçildi mi?: Hayır ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void scrollUpCheck() throws InterruptedException {
@@ -59,6 +61,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Yukarı çıktı mı ?: Hayır ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	
@@ -81,6 +85,8 @@ public class FeaturesTest {
 		}
 		WebElement sepetiBosalt = surucu.findElement(By.xpath("//*[@id=\"pb-container\"]/div/div[2]/div[2]/div/div[4]/button/i"));
 		sepetiBosalt.click();
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void loginTest() throws InterruptedException {
@@ -102,7 +108,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Kullanıcı girişi yapıldı mı?: Hayır. Test başarısız. ");
 		}
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	
@@ -141,6 +148,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Koleksiyon silindi mi? : Hayır. Test Başarısız.");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void takipEdilenKoleksiyonSilme() throws InterruptedException {
@@ -161,6 +170,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Takip edilen koleksiyon silindi mi ? : Evet. Test başarılı. ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 	public void duyuruTercihleriGuncelleme() throws InterruptedException {// Geri Don
@@ -179,6 +190,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Tercihler güncellendi mi ? : Hayır. Test başarısız. ");
 		}
+	Thread.sleep(5000);
+	surucu.quit();
 	} 
 	
 	public void gecmisiAcKapaGuncelleme() throws InterruptedException {// Geri Don
@@ -210,7 +223,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Gecmis açıldı mı ? : Hayır. Test başarısız. ");
 		}
-	
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	public void magazaTakipEtmeBirakma() throws InterruptedException {
 		WebDriver surucu = login();
@@ -233,6 +247,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Mağaza takipten çıkıldı mı? : Hayır . Test Başarısız. ");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	}
 	
 	public void urunSorularinaGit() throws InterruptedException {
@@ -247,6 +263,8 @@ public class FeaturesTest {
 		}else {
 			System.out.println("Ürün sorularına gidildi mi? : Hayır. Test başarısız.");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	} 
 	
 

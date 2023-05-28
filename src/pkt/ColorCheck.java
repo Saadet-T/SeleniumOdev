@@ -24,10 +24,12 @@ public class ColorCheck {
 		String rgb = liA.getCssValue("color");
 		String renk = Color.fromString(rgb).asHex();
 		if(renk.equals("#666666")) {
-			System.out.println("Test Başarılı");
+			System.out.println("NavBar liste rengi verilen renk kodu ile uyumlu. Test Başarılı.");
 		} else {
-			System.out.println("Test Başarısız");
+			System.out.println("NavBar liste rengi verilen renk kodu ile uyumlu değil. Test Başarısız");
 		}
+		Thread.sleep(5000);
+		surucu.quit();
 	}
 	
 	public  void urunUcretRenkKontrol() throws InterruptedException {
@@ -38,12 +40,12 @@ public class ColorCheck {
 		String renkFiyat = fiyatRenk.getCssValue("color");
 		String renkFiyatHex = Color.fromString(renkFiyat).asHex();
 		if(renkFiyatHex.equals("#f27a1a")) {
-			System.out.println("Test Başarılı");
+			System.out.println("Ürün ücreti rengi ile verilen renk uyumlu.Test Başarılı.");
 		} else {
-			System.out.println("Test Başarısız");
+			System.out.println("Ürün ücreti rengi ile verilen renk uyumlu.Test Başarısız.");
 		}
-		Thread.sleep(2000);
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	}
 	public void sepeteEkleButonYaziRenkKontrol() throws InterruptedException {
 		WebDriver surucu=SurucuAta.surucuAta("https://www.trendyol.com/trendyolmilla/siyah-straight-dokuma-yuksek-bel-nervur-dikisli-pantolon-twoss21pl0093-p-71519125?boutiqueId=620835&merchantId=968&sav=true");
@@ -51,12 +53,12 @@ public class ColorCheck {
 		String renkButon = butonRenk.getCssValue("color");
 		String renkFiyatHex = Color.fromString(renkButon).asHex();
 		if(renkFiyatHex.equals("#ffffff")) {
-			System.out.println("Test Başarılı");
+			System.out.println("Sepete Ekle buton yazısı rengi ile verilen renk uyumlu.Test Başarılı.");
 		} else {
-			System.out.println("Test Başarısız");
+			System.out.println("Sepete Ekle buton yazısı rengi ile verilen renk uyumlu değil.Test Başarısız.");
 		}
-		Thread.sleep(2000);
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	}
 	public void sepeteEkleButonRenkKontrol() throws InterruptedException {
 		WebDriver surucu=SurucuAta.surucuAta("https://www.trendyol.com/trendyolmilla/siyah-straight-dokuma-yuksek-bel-nervur-dikisli-pantolon-twoss21pl0093-p-71519125?boutiqueId=620835&merchantId=968&sav=true");
@@ -64,12 +66,12 @@ public class ColorCheck {
 		String renkButon = butonRenk.getCssValue("color");
 		String renkFiyatHex = Color.fromString(renkButon).asHex();
 		if(renkFiyatHex.equals("#f27a1a")) {
-			System.out.println("Test Başarılı");
+			System.out.println("Sepete Ekle buton rengi ile verilen renk uyumlu.Test Başarılı");
 		} else {
-			System.out.println("Test Başarısız");
+			System.out.println("Sepete Ekle buton yazısı rengi ile verilen renk uyumlu değil.Test Başarısız");
 		}
-		Thread.sleep(2000);
-		
+		Thread.sleep(5000);
+		surucu.quit();
 	}
 	
 	
