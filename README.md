@@ -6,7 +6,7 @@ Driver dosyası "D:\\Selenium Driver\\ChromeDriver\\chromedriver.exe" dizininde 
 1. Yazılımın Geliştirilme Amacı
 
 Bu yazılımın geliştirilme amacı oluşturulan bir web uygulama projesindeki fonksyionların ve 
-işlemlerinin istenildiği gibi gerçekleştiğinden emin olmak. Resimlerin display edilidğininden linklerin 
+işlemlerinin istenildiği gibi gerçekleştiğinden emin olmak. Resimlerin display edildiğininden linklerin 
 çalıştığından, uygulamadaki renklerin istenilen renkler olduğundan emin olmak için yazılan bir testtir. 
 
 2.Yazılımın Geliştirilmesi 
